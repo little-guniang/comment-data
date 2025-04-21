@@ -1,0 +1,162 @@
+/* a.css */
+
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+
+.pinkbox {
+    background-color: #ff85a2;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 133, 162, 0.4);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    transition: all 0.5s ease;
+}
+
+/* 标题样式 */
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    flex:1 1 auto;
+}
+
+.form-group input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.form-group p{
+    width: 100%;
+    height: 15px;
+}
+
+/* 按钮样式 */
+.YY{
+  
+    background-color: #ff6b8b;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 107, 139, 0.4);
+    margin-top: 10px;
+}
+.YY:hover {
+    background-color: #ff577a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 107, 139, 0.5);
+}
+
+/* 记住我复选框样式 */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.checkbox input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    color: white;
+    cursor: pointer;
+    width:100%;
+    margin-top: 13px;
+}
+
+/* 更多内边距的类 */
+.signinform {
+    padding-top: 20px;
+    max-height: 350px;
+}
+
+/* 隐藏类 */
+.nodisplay {
+    display: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .pinkbox {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    input, .button {
+        padding: 12px 15px;
+    }
+}
+
+.Turn{
+    margin: 20px 0;
+    color: white;
+    text-decoration:underline;
+}
+
+.Turn:hover{
+    cursor: pointer;
+}

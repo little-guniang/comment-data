@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./a.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="welcome">
+            <div class="pinkbox">
+                <!-- 注册 -->
+                <div class="signup nodisplay">
+                    <h1>Register</h1>
+                    <form class="signupform" autocomplete="off">
+                        <div class="form-group">
+                            <input id="UsernameId" type="text" placeholder="Username">
+                            <p class="err"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="EmailId" type="email" placeholder="Email">
+                            <p class="err"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="passwordId" type="password" placeholder="Password">
+                            <p class="err"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="password2Id" type="password" placeholder="Confirm Password">
+                            <p class="err"></p>
+                        </div>
+                        
+                        <button id="RegButton" class="YY">注册</button>
+                        <a class="Turn">点击这里登录</a>
+                    </form>
+                </div>
+
+                <!-- 登录 -->
+                <div class="signin">
+                    <h1>Sign In</h1>
+                    <form class="signinform" autocomplete="off">
+                        <div class="form-group">
+                            <input id="SigninUsernameId" type="text" placeholder="Username">
+                            <p class="err"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="SigninpasswordId" type="password" placeholder="Password">
+                            <p class="err"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <input type="checkbox" id="remember" />
+                                <label for="remember">Remember Me</label>    
+                            </div>
+                        </div>
+
+                        <button id="LoginButton" class="YY">Login</button>
+                        <a class="Turn">点击这里注册</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./api.js"></script>
+    <script src="./reg.js"></script>
+    <script src="./login.js"></script>
+    <script src="./command.js"></script>
+    <script src="./verify.js"></script>
+    <script>
+        // 注册、登录界面切换
+        const signup = document.querySelector(".signup");
+        const signin = document.querySelector(".signin");
+        const Turn = document.querySelectorAll(".Turn");
+        Turn.forEach(btn => {
+            btn.onclick = function (e) {
+                e.preventDefault();
+                signup.classList.toggle('nodisplay');
+                signin.classList.toggle('nodisplay');
+            }
+        })
+
+    </script>
+</body>
+
+</html>
