@@ -5,7 +5,7 @@
     // 如果登录不成功
     if (!user) {
         alert("登录异常，请重新登陆");
-        location.href = './a.html';
+        location.href = './index.html';
         return;
     }
 
@@ -32,7 +32,7 @@
     // 点击按钮X，退出账号
     Doms.close.onclick = function () {
         API.logout();
-        location.href = "./a.html";
+        location.href = "./index.html";
     }
 
     // 加载历史记录
